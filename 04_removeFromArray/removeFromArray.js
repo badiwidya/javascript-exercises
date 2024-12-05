@@ -1,9 +1,5 @@
 const removeFromArray = function(arr, ...rem) {
-  arr = arr.filter((item) => {
-    if (!rem.includes(item)) {
-      return item;
-    }
-  })
+  arr = arr.filter(item => !rem.includes(item));
 
   //! another way
   /* let newArr = [];
